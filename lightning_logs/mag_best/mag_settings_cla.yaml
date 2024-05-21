@@ -1,0 +1,32 @@
+task: 'node_classification'
+data:
+  datapath: 'data/mag/all_data.pkl'
+  batch_size: 50
+  hops: 7
+  n_class: 4
+  num_workers: 0
+model:
+  input_dim: 128 
+  type: 4
+  L_hop: 4
+  L_type: 2
+  num_heads: 8
+  d_model: 512 
+  dropout_rate: 0.01
+  attention_dropout_rate: 0.05
+  n_class: 4
+  use_gradient_checkpointing: False
+  lr: 0.00001
+  wd: 0.00
+  train_emb_save_folder: 'records/train_em'
+  test_emb_save_folder: 'records/test_em'
+  train_label_save_folder: 'records/train_label'
+  test_label_save_folder: 'records/test_label'
+  file_name: 'mag1'
+callback:
+  monitor: 'micro-f1'
+  mode: 'max'
+train:
+  max_epochs: 200
+  accelerator: gpu
+  devices: 1
