@@ -1,6 +1,10 @@
-# HHGT
+# HHGT: Hierarchical Heterogeneous Graph Transformer for Heterogeneous Graph Representation Learning 
 
-Source code for paper "HHGT: Hierarchical Heterogeneous Graph Transformer for Heterogeneous Graph Representation Learning"
+This repository hosts the code, datasets of **HHGT**, as well as the instructions to the selected baselines.
+
+## 🎉 News 
+
+- [x] 🚀 [2024.10] 🎯🎯📢📢 Our 🌟HHGT🌟 has been accepted by WSDM'2025 Research Track (17.3% acceptance rate)! Congrats! 🎉🎉🎉
 
 
 ## Baseline links
